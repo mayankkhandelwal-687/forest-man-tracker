@@ -1,0 +1,65 @@
+.button-class{
+	display: flex;
+	flex-direction: row;
+	
+}
+.upper-div{
+	height: 800px;
+	width: 800px;
+	margin-left: 300px;
+	background-color: Gray;
+}
+h2{
+	font-size: 60px;
+	text-align: center;
+}
+table{
+	margin-left: 100px;
+	margin-right:100px;
+	font-size: 28px;
+	border :2px solid black;
+}
+th{
+	padding: 30px;
+	border :2px solid black;
+}
+td{
+	border :2px solid black;
+	text-align:center;
+	
+}
+.button-class{
+	margin-left: 300px;
+	height:30px;
+	width:800px;
+	text-align: center;
+	
+}
+#create-id{
+	margin-left: 260px;
+	background-color:BlanchedAlmond;
+	border-radius: 10px;
+	color:gray;
+}
+#edit-id{
+	margin-left:10px;
+	background-color:BlanchedAlmond;
+	border-radius: 10px;
+	color:gray;
+}
+#delete-id{
+	margin-left:10px;
+	background-color:BlanchedAlmond;
+	border-radius: 10px;
+	color:gray;
+}
+#create-id:hover{
+	color: black;
+}
+#edit-id:hover{
+	color: black;
+}
+#delete-id:hover{
+	color: black;
+}
+

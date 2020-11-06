@@ -1,0 +1,37 @@
+#image-div{
+	margin-top: 0px;
+height: 100px;
+width: 1400px;
+	
+background-color: #FFFFFF;
+margin-left: 10px;
+}
+h1{
+	text-align:center;
+	margin-top: -6%;
+}
+table{
+	
+	text-align: center;
+}
+.genu{
+	margin-top: -6%;
+	
+	
+}
+
+th{ 
+	
+padding-left: 50px;
+background-color: RoyalBlue;
+color: white;
+text-align: left;
+
+}
+
+td{
+	padding-left: 80px;
+}
+
+
+

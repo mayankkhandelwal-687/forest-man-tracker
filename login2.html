@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Login Page</title>
+<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+
+<div class="main-div">
+<form action="login.js" method="get">
+<input type="text" id="input1" placeholder="Enter User Name" name="first"></br>
+<input type="password" id="input2" placeholder="Enter Password" name="second" ></br>
+<input type="button" onclick="check(this.form)" value="Login"/>
+
+</form>
+</div>
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.first.value == "user" && form.second.value == "abcd")
+  {
+    window.open('user.html')/*opens the target page while Id & password matches*/
+  }
+ else if(form.first.value == "admin" && form.second.value == "abcd")
+ {
+    window.open('admin.html')/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+</script>
+
+
+
+</body>
+</html>

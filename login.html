@@ -1,0 +1,40 @@
+<html>
+<head><title>Login Page</title>
+<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+<div class="main-div">
+<form action="#" method="get">
+<input type="text" id="input1" placeholder="Enter User Name" name="first"></br>
+<input type="password" id="input2" placeholder="Enter Password" name="second" ></br>
+<input type="submit" id="input3" value="Submit"  name="third">
+</form>
+
+</div>
+<?php
+if(isset($_GET['third']))
+{	
+$username=$_GET['first'];
+$newlkm=$_GET['second'];
+
+
+if($username=='user' && $newlkm=="abcd")
+{
+ header("Location: http://www.geeksforgeeks.org"); 
+
+}
+else if($username=="admin" && $newlkm=="abcd")
+{
+	header("Location: http://www.google.com"); 
+}
+else{
+	
+	
+	echo "<h1>enter right name</h1>";
+}
+}
+?>
+
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>newpage</title>
+<link rel="stylesheet" type="text/css" href="newpage.css">
+</head>
+<body>
+<div class="main-div">
+<div class="first-div">
+<div class="abc">
+<?php
+     
+	$servername = "gcp01.siotel.in"
+	$username ="root";
+	$password ="Sstpl012015";
+	$databasename ="SSTPL_UPLINK";
+	
+	$connection = mysqli_connect($servername,$username,$password,$databasename);
+	
+	if(!$connection)
+	{
+		die("connection Unsuccessfull:".mysqli_connect_error());
+	}
+	else{
+	    echo "connection Done";
+	}
+     $sql="select MAC from SSTPL_UP_Data limit 1";
+	 $result = mysqli_query($connection,$sql);
+	 var_dump($result);
+	 $rowcount= mysqli_num_rows($result);
+	 if($rowcount > 0)
+	 {
+		 echo "
+		 <table>
+		    <thead>
+			   <tr>
+			      <th>MAC</th>
+				  
+				</tr>
+            </thred>
+			
+			";
+	 }
+	 
+	 ?>
+	 <?php while($row= $result->fetch_assoc()):?>
+	      <tr>
+		     <td><?php echo $row['MAC']?></td>
+			 
+			</tr>
+			<?php endwhile ;?>
+			
+			
+		</table>
+
+</div>
+<div class="abc"></div>
+<div class="abc"></div>
+</div>
+<div class="second-div">
+<div class="abc1">Box4</div>
+<div class="abc1">Box5</div>
+<div class="abc1">Box6</div>
+</div>
+<div class="three-div">
+<div class="abc2">Box7</div>
+<div class="abc2">Box8</div>
+<div class="abc2">Box9</div>
+</div>
+
+
+</div>
+</body>
+</html>
